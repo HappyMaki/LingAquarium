@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6349151928875962174}
   - component: {fileID: 2931604500597588581}
   m_Layer: 8
-  m_Name: Boid
+  m_Name: Cone Boid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
