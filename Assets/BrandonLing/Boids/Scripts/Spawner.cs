@@ -9,17 +9,19 @@ public class Spawner : MonoBehaviour {
     public Boid prefab;
     public float spawnRadius = 10;
     public int spawnCount = 10;
+    public bool setColor = false;
     public Color colour;
     public GizmoType showSpawnRegion;
 
     void Awake () {
         for (int i = 0; i < spawnCount; i++) {
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
+            Debug.Log ("Spawning boid at: " + prefab);
             Boid boid = Instantiate (prefab);
             boid.transform.position = pos;
             boid.transform.forward = Random.insideUnitSphere;
-
-            boid.SetColour (colour);
+            if (setColor)
+                boid.SetColour (colour);
         }
     }
 
