@@ -1,4 +1,4 @@
-# Boids
+# Ling Aquarium
 
 A little experiment with boids in Unity:
 https://www.youtube.com/watch?v=bqtqltqcQhw
